@@ -1,0 +1,17 @@
+[package]
+name = "b2b"
+version = "0.1.0"
+documentation = "A command line utility to calculate BLAKE2b checksums"
+homepage = "https://github.com/metadave/b2b"
+repository = "https://github.com/metadave/b2b"
+license = "Apache-2.0"
+authors = ["Dave Parfitt <diparfitt@gmail.com>"]
+
+[dependencies]
+sodiumoxide = "*"
+libsodium-sys = "*"
+rustc-serialize = "0.3.19"
+
+[dependencies.clap]
+version = "2.3.0"
+features = [ "suggestions", "color" ]
