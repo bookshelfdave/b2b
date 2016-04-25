@@ -1,7 +1,8 @@
 [package]
 name = "b2b"
+description = "A command line utility to calculate BLAKE2b checksums"
 version = "0.1.0"
-documentation = "A command line utility to calculate BLAKE2b checksums"
+documentation = "https://github.com/metadave/b2b"
 homepage = "https://github.com/metadave/b2b"
 repository = "https://github.com/metadave/b2b"
 license = "Apache-2.0"
