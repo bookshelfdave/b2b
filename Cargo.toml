@@ -9,8 +9,8 @@ license = "Apache-2.0"
 authors = ["Dave Parfitt <diparfitt@gmail.com>"]
 
 [dependencies]
-sodiumoxide = "*"
-libsodium-sys = "*"
+sodiumoxide = "0.0.10"
+libsodium-sys = "0.0.10"
 rustc-serialize = "0.3.19"
 
 [dependencies.clap]
