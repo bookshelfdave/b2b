@@ -25,24 +25,6 @@ ARGS:
     <FILE>    Input filename or - to read from <stdin>
 ```
 
-# Installing
-
-You'll need the `cargo` command from Rust and `libsodium-dev` installed.
-
-```
-cargo install b2b
-```
-
-If this fails because Cargo can't find libsodium (typically OSX), try setting the following environment variables to the appropriate values:
-
-```
-# SODIUM_LIB_DIR must end with /lib
-export SODIUM_LIB_DIR=/some/path/ending/with/lib
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SODIUM_LIB_DIR
-cargo install b2b
-```
-
-
 # Building from source
 
 b2b is written in [Rust](https://www.rust-lang.org/).
@@ -65,6 +47,10 @@ export SODIUM_LIB_DIR=`brew info libsodium | grep Cellar | awk '{ print $1 }'`/l
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SODIUM_LIB_DIR
 cargo build
 ```
+
+# Dependency notes
+
+This tool depends on sodiumoxide and the `crypto_generichash_*` functions which were recently merged, but do not appear in the higher level `sodiumoxide` API. Because of this, there is a `.cargo/config` hack to use an vendored version of sodiumoxide in the `vendor` directory. As soon as sodiumoxide has higher level API's and publishes a new crate, I'll take this magic out which will allow `cargo install b2b` to work.
 
 # License
 
