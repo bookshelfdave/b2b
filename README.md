@@ -25,6 +25,23 @@ ARGS:
     <FILE>    Input filename or - to read from <stdin>
 ```
 
+# Installing
+
+You'll need the `cargo` command from Rust and `libsodium-dev` installed.
+
+```
+cargo install b2b
+```
+
+If this fails because Cargo can't find libsodium (typically OSX), try setting the following environment variables to the appropriate values:
+
+```
+# SODIUM_LIB_DIR must end with /lib
+export SODIUM_LIB_DIR=/some/path/ending/with/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$SODIUM_LIB_DIR
+cargo install b2b
+```
+
 
 # Building from source
 
