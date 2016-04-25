@@ -1,5 +1,7 @@
 # b2b
 
+[![Build Status](https://travis-ci.org/metadave/b2b.svg?branch=master)](https://travis-ci.org/metadave/b2b)
+
 
 `b2b` is a command line tool to calculate [BLAKE2b](https://blake2.net/)  hashes based on [libsodium](https://github.com/jedisct1/libsodium) and [sodiumoxide](https://github.com/dnaq/sodiumoxide).
 
