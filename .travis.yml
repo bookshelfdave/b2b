@@ -1,4 +1,5 @@
 before_install:
+  - sudo add-apt-repository ppa:cjwatson/launchpad -y
   - sudo apt-get -qq update
   - sudo apt-get install -y libsodium-dev
 language: rust
