@@ -29,7 +29,9 @@ ARGS:
 b2b is written in [Rust](https://www.rust-lang.org/).
 
 
-### Ubuntu 
+### Ubuntu
+
+TODO: untested
 
 ```
 apt-get install libsodium-dev
@@ -49,7 +51,7 @@ cargo build
 
 b2b is released under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0.html) license.
 
-See also: 
+See also:
 
 - https://github.com/jedisct1/libsodium/blob/master/LICENSE
 
