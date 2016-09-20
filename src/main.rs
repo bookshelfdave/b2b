@@ -185,7 +185,7 @@ mod tests {
         exe_path().parent().unwrap().parent().unwrap().parent().unwrap().join("LICENSE")
     }
 
-    // Running b2sum against the LICENSE file int he project root produces
+    // Running b2sum against the LICENSE file int the project root produces
     // the following sums:
     // root@733ceb451f14:/src/foo/BLAKE2/b2sum# ./b2sum -l 8 ./LICENSE
     // 60  ./LICENSE
